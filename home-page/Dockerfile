@@ -1,15 +1,15 @@
-FROM node:12
-WORKDIR /usr/src/app
+# FROM node:12
+# WORKDIR /usr/src/app
 
-COPY package.json ./
-COPY yarn.lock ./
+# COPY package.json ./
+# COPY yarn.lock ./
 
-RUN yarn install
+# RUN yarn install
 
-COPY . .
+# COPY . .
 
-RUN yarn build
+# RUN yarn build
 
-EXPOSE 8080
+# EXPOSE 8080
 
-CMD [ "yarn", "build:start" ]
+# CMD [ "yarn", "build:start" ]
